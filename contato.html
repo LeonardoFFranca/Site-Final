@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-secondary bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html" id="brand">Culinária</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-secondary text-white" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Culinária</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="texto.html">Carta</a>
+                        </li>
+                    </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+
+		<div class="py-3 text-center">
+			<img class="d-block mx-auto mb-2" src="imagens/contato.png" alt="" width="135" height="135">
+			<h2>Fale Conosco</h2>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card-body font-weight-bold">
+					<form action="processa_envio.php" method="post">
+						<div class="form-group">
+							<label for="nome">Nome</label>
+							<input name="nome" type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+						</div>
+
+						<div class="form-group">
+							<label for="assunto">Assunto</label>
+							<input name="assunto" type="text" class="form-control" id="assunto"
+								placeholder="Digite o assunto do e-mail">
+						</div>
+
+						<div class="form-group">
+							<label for="mensagem">Mensagem</label>
+							<textarea name="mensagem" class="form-control" id="mensagem"
+								placeholder="Digite sua mensagem"></textarea>
+						</div>
+						<div class="d-grid gap-2 col-3 mx-auto">
+							<button type="submit" class="btn btn-secondary btn-lg">Enviar Mensagem</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+        Desenvolvido por Leonardo François França
+    </footer>
+</body>
+
+</html>
